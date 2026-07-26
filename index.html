@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Domfe TV</title>
+  <link rel="icon" href="assets/images/logo-domfe.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="stage" class="stage">
+    <div class="ambient" aria-hidden="true">
+      <div class="facade"></div>
+      <div class="ambient-light ambient-light-one"></div>
+      <div class="ambient-light ambient-light-two"></div>
+      <div class="wave wave-back"></div>
+      <div class="wave wave-front"></div>
+    </div>
+    <div id="sceneHost" class="scene-host" aria-live="polite"></div>
+    <div id="transitionCurtain" class="transition-curtain" aria-hidden="true"></div>
+
+    <section id="startOverlay" class="start-overlay">
+      <div class="start-card">
+        <img src="assets/images/logo-domfe.png" alt="Associação Espírita Dom Feliciano">
+        <div class="start-brand"><span class="start-tv-icon" aria-hidden="true">▶</span> DOMFE TV</div>
+        <p>Acolhimento • Estudo • Vivência</p>
+        <button id="startButton" type="button" disabled>Iniciar programação</button>
+        <div id="status" class="start-status" role="status">Carregando configuração…</div>
+      </div>
+    </section>
+
+    <nav class="controls" aria-label="Controles da programação">
+      <button id="prevButton" type="button" aria-label="Cena anterior">◀</button>
+      <button id="pauseButton" type="button" aria-label="Pausar">⏸</button>
+      <button id="nextButton" type="button" aria-label="Próxima cena">▶</button>
+      <button id="muteButton" type="button" aria-label="Silenciar">🔊</button>
+      <button id="fullscreenButton" type="button" aria-label="Tela cheia">⛶</button>
+    </nav>
+    <audio id="backgroundAudio" loop preload="auto"></audio>
+  </main>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

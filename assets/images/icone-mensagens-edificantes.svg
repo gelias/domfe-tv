@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="livro" x1="25" y1="35" x2="95" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2f6bbb"/>
+      <stop offset="1" stop-color="#173f79"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 43c-10-9-23-13-38-11v51c15-2 28 2 38 11V43Zm0 0c10-9 23-13 38-11v51c-15-2-28 2-38 11V43Z" fill="none" stroke="url(#livro)" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M60 44v49" stroke="#2356a3" stroke-width="5" stroke-linecap="round"/>
+  <path d="M60 14v13M38 20l7 11M82 20l-7 11" fill="none" stroke="#2356a3" stroke-width="6" stroke-linecap="round"/>
+</svg>

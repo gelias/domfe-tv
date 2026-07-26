@@ -1,0 +1,1 @@
+Copie o card mensal para esta pasta e informe o caminho em config/playlist.json.

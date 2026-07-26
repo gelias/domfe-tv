@@ -1,0 +1,10 @@
+{
+  "defaultDuration": 12,
+  "transitionMs": 1100,
+  "music": {
+    "src": "assets/audio/instrumental.mp3",
+    "volume": 0.22,
+    "fadeMs": 500
+  },
+  "loop": true
+}

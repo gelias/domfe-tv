@@ -1,0 +1,276 @@
+[
+  { "type": "vinheta", "duration": 12 },
+  {
+    "type": "welcome",
+    "duration": 16,
+    "eyebrow": "Associação Espírita Dom Feliciano",
+    "title": "Seja muito bem-vindo!",
+    "text": "Que a paz de Jesus esteja em seu coração.\nEm instantes iniciaremos nossa atividade."
+  },
+  {
+    "type": "about",
+    "duration": 12,
+    "title": "Conheça a Domfe",
+    "text": "Nossa história, atividades e horários"
+  },
+  {
+    "type": "history",
+    "duration": 18,
+    "title": "Quem foi Dom Feliciano?",
+    "text": "Feliciano José Rodrigues de Araújo Prates foi o primeiro bispo nascido no Rio Grande do Sul. Seu nome inspira a nossa casa, fundada em 31 de março de 1945, a cultivar estudo, fraternidade e serviço ao próximo.",
+    "image": "assets/images/dom-feliciano.jpg",
+    "website": "https://domfe.wordpress.com"
+  },
+  {
+    "type": "services",
+    "duration": 24,
+    "eyebrow": "Agenda semanal",
+    "title": "Início da semana",
+    "items": [
+      { "day": "Segunda-feira", "time": "20h15", "title": "Exposição sobre obsessão e desobsessão", "emphasis": "Para maiores de 12 anos" },
+      { "day": "Terça-feira", "time": "15h", "title": "Exposição doutrinária e orientação espiritual" },
+      { "day": "Terça-feira", "time": "20h", "title": "Estudo Sistematizado da Doutrina Espírita — ESDE" }
+    ],
+    "highlights": [
+      { "day": "Segunda-feira", "image": "assets/images/inicio-semana-estudo-acessivel.png", "imageAlt": "Ilustração inclusiva de um grupo intergeracional, com uma pessoa cadeirante, reunido para estudo" }
+    ]
+  },
+  {
+    "type": "services",
+    "duration": 24,
+    "eyebrow": "Agenda semanal",
+    "title": "Meio da semana",
+    "items": [
+      { "day": "Quarta-feira", "time": "20h", "title": "Estudo Sistematizado da Doutrina Espírita — ESDE" },
+      { "day": "Quarta-feira", "time": "20h", "title": "Estudo das Obras Básicas", "detail": "Aberto ao público — On-line" },
+      { "day": "Quinta-feira", "time": "15h", "title": "Exposição doutrinária e orientação espiritual" },
+      { "day": "Quinta-feira", "time": "20h", "title": "Estudo Sistematizado da Doutrina Espírita — ESDE" },
+      { "day": "Quinta-feira", "time": "21h40", "title": "Preces e irradiações", "detail": "Canal do YouTube" }
+    ],
+    "highlights": [
+      { "day": "Quinta-feira", "qrCode": "assets/images/qrcode-irradiacoes.svg", "qrAlt": "QR Code para enviar nomes às irradiações", "showDomfeTvMark": true }
+    ]
+  },
+  {
+    "type": "services",
+    "duration": 26,
+    "eyebrow": "Agenda semanal",
+    "title": "Final da semana",
+    "items": [
+      { "day": "Sexta-feira", "time": "20h15", "title": "Exposição doutrinária e orientação espiritual" },
+      { "day": "Sábado", "time": "8h30", "title": "Estudo das Obras Básicas", "detail": "Aberto ao público — Presencial e on-line" },
+      { "day": "Sábado", "time": "13h30", "title": "Oficina de arte", "detail": "Para todos da família" },
+      { "day": "Sábado", "time": "14h30", "title": "Evangelização infantojuvenil e família", "detail": "Crianças de 0 a 17 anos, pais e responsáveis" }
+    ],
+    "highlights": [
+      { "day": "Sexta-feira", "image": "assets/images/evangelizacao-jesus-criancas-v2.png", "imageAlt": "Ilustração de Jesus acolhendo crianças na evangelização" }
+    ]
+  },
+  {
+    "type": "services",
+    "duration": 18,
+    "eyebrow": "Outras Atividades da Casa",
+    "title": "Acolhimento e serviço",
+    "centeredItems": true,
+    "footerMessage": "Solicite na recepção",
+    "items": [
+      { "title": "Atendimento e diálogo fraterno", "detail": "Acolhimento individual" },
+      { "title": "Caravanas e Evangelho no Lar", "detail": "Implantação do Evangelho no Lar" }
+    ]
+  },
+  {
+    "type": "agenda",
+    "duration": 10,
+    "title": "Programação mensal",
+    "text": "Exposições abertas ao público",
+    "icon": "assets/images/icone-agenda.svg",
+    "image": ""
+  },
+  {
+    "type": "agenda",
+    "duration": 12,
+    "title": "Programação de julho",
+    "image": "content/agenda/julho-01.png"
+  },
+  {
+    "type": "agenda",
+    "duration": 12,
+    "title": "Programação de julho — card 2",
+    "image": "content/agenda/julho-02.png"
+  },
+  {
+    "type": "agenda",
+    "duration": 12,
+    "title": "Programação de julho — card 3",
+    "image": "content/agenda/julho-03.png"
+  },
+  {
+    "type": "agenda",
+    "duration": 12,
+    "title": "Programação de julho — card 4",
+    "image": "content/agenda/julho-04.png"
+  },
+  {
+    "type": "agenda",
+    "duration": 12,
+    "title": "Programação de julho — card 5",
+    "image": "content/agenda/julho-05.png"
+  },
+  {
+    "type": "agenda",
+    "duration": 12,
+    "title": "Programação de julho — card 6",
+    "image": "content/agenda/julho-06.png"
+  },
+  {
+    "type": "notice",
+    "duration": 10,
+    "intro": true,
+    "title": "Avisos da Casa",
+    "text": "Informações importantes para você"
+  },
+  {
+    "type": "notice",
+    "duration": 19,
+    "title": "Você é muito bem-vindo",
+    "noticePinned": "first",
+    "noticeGroup": "common",
+    "text": "A casa oferece acolhimento, esclarecimento racional e compreensão dos ensinamentos de Jesus.\nMantenha bons pensamentos por você, seus familiares e amigos.",
+    "image": "assets/images/aviso-acolhimento.png",
+    "imageStyle": "illustration",
+    "imageAlt": "Ilustração de visitantes sendo recebidos fraternalmente na casa"
+  },
+  {
+    "type": "notice",
+    "duration": 16,
+    "title": "Celular no silencioso",
+    "noticeGroup": "common",
+    "text": "Antes de começarmos, desligue o celular ou ative o modo avião ou silencioso.",
+    "image": "assets/images/aviso-celular.png",
+    "imageStyle": "illustration",
+    "imageAlt": "Ilustração de uma visitante colocando o celular no modo silencioso"
+  },
+  {
+    "type": "notice",
+    "duration": 18,
+    "title": "Nas exposições doutrinárias",
+    "noticeGroup": "doctrinal",
+    "contextLabel": "Terças, quintas e sextas",
+    "titleNoWrap": true,
+    "text": "Exposição doutrinária e, ao final, passe coletivo.\nNão ocorrem fenômenos espirituais ou materiais.",
+    "image": "assets/images/aviso-reuniao.png",
+    "imageStyle": "illustration",
+    "imageAlt": "Ilustração de uma exposição doutrinária de terça, quinta ou sexta-feira com público atento"
+  },
+  {
+    "type": "notice",
+    "duration": 20,
+    "title": "Nas exposições de desobsessão",
+    "titleNoWrap": true,
+    "titleCompact": true,
+    "imageOffset": "lower",
+    "noticeGroup": "monday",
+    "contextLabel": "Segundas-feiras • 20h15",
+    "text": "Reunião fraterna com leitura do Evangelho, duas exposições, fluidoterapia e passe.\nNão ocorrem fenômenos espirituais ou materiais.",
+    "image": "assets/images/aviso-desobsessao-reuniao.png",
+    "imageStyle": "illustration",
+    "imageAlt": "Ilustração de uma reunião fraterna de desobsessão com exposição e público adulto atento"
+  },
+  {
+    "type": "notice",
+    "duration": 20,
+    "title": "Recomendada para maiores de 12 anos",
+    "noticeGroup": "monday",
+    "contextLabel": "Segundas-feiras • 20h15",
+    "text": "As exposições de desobsessão são voltadas ao público adulto.\nAs crianças podem participar da Evangelização aos sábados, com abordagem adequada à sua compreensão.",
+    "image": "assets/images/aviso-desobsessao-faixa-etaria.png",
+    "imageStyle": "illustration",
+    "imageAlt": "Ilustração acolhedora de uma família com adolescente e criança"
+  },
+  {
+    "type": "notice",
+    "duration": 20,
+    "title": "Passe e fluidoterapia",
+    "noticeGroup": "common",
+    "text": "O passe é uma doação de fluidos por meio do pensamento e da vontade.\nPara lembrar alguém ausente, não é preciso trazer roupas ou objetos pessoais.",
+    "image": "assets/images/aviso-passe-maos-acima.png",
+    "imageStyle": "illustration",
+    "imageAlt": "Ilustração serena de uma pessoa recebendo o passe com as mãos posicionadas acima da cabeça"
+  },
+  {
+    "type": "notice",
+    "duration": 18,
+    "title": "Aprender e crescer em família",
+    "noticeGroup": "common",
+    "titleNoWrap": true,
+    "text": "Evangelização e estudo das Obras Básicas aos sábados.\nInformações no mural ou na recepção.",
+    "image": "assets/images/evangelizacao-jesus-criancas-v2.png",
+    "imageStyle": "illustration",
+    "imageAlt": "Ilustração de Jesus acolhendo crianças durante a Evangelização",
+    "badgeImage": "assets/images/logo-domfe-jovem.png",
+    "badgeAlt": "Domfe Jovem — Construindo o futuro do Espiritismo",
+    "badgePlacement": "visual"
+  },
+  {
+    "type": "notice",
+    "duration": 18,
+    "title": "Oficina de Arte",
+    "text": "Nova atividade para toda a família",
+    "image": "content/avisos/oficina-de-arte-agosto-2026.png",
+    "imageAlt": "Flyer da Oficina de Arte da Domfe, aos sábados, das 13h30 às 14h30"
+  },
+  {
+    "type": "notice",
+    "noticeLayout": "campaign",
+    "duration": 18,
+    "title": "Campanha permanente",
+    "headline": "Sua doação alimenta muito mais do que o corpo.",
+    "text": "Doe alimentos ou contribua para a compra das cestas básicas.",
+    "donationOptions": [
+      {
+        "label": "PIX DOMFE",
+        "value": "04.043.306/0001-86"
+      },
+      {
+        "label": "COMPRA DIRETA • SACOLÃO",
+        "value": "WhatsApp (51) 99940-4397",
+        "note": "Faça a compra e o Sacolão entrega na Domfe."
+      }
+    ],
+    "footer": "Entregas na sede • Rua Monte Castelo, 674"
+  },
+  {
+    "type": "message",
+    "duration": 12,
+    "title": "Mensagens edificantes",
+    "text": "Em instantes iniciaremos nossas atividades. Aproveite este momento para harmonizar seus pensamentos."
+  },
+  {
+    "type": "quote",
+    "duration": 22,
+    "quote": "A luta maior não é contra os outros, mas contra as imperfeições que ainda trazemos em nós.",
+    "source": "Reflexão inspirada nos ensinamentos de Joanna de Ângelis"
+  },
+  {
+    "type": "video",
+    "title": "Evangelho no Lar",
+    "src": "assets/video/evangelho-no-lar.mp4"
+  },
+  {
+    "type": "socials",
+    "duration": 20,
+    "eyebrow": "Conecte-se com a Domfe",
+    "title": "Nossos canais",
+    "channels": [
+      { "kind": "youtube", "label": "YouTube", "display": "@aespiritadomfeliciano", "url": "https://www.youtube.com/@aespiritadomfeliciano" },
+      { "kind": "instagram", "label": "Instagram", "display": "@aespiritadomfeliciano", "url": "https://www.instagram.com/aespiritadomfeliciano" },
+      { "kind": "facebook", "label": "Facebook", "display": "aespiritadomfeliciano", "url": "https://www.facebook.com/aespiritadomfeliciano" },
+      { "kind": "blog", "label": "Blog", "display": "domfe.wordpress.com", "url": "http://domfe.wordpress.com/" }
+    ],
+    "whatsapp": {
+      "display": "(51) 99417-6173",
+      "url": "https://wa.me/5551994176173",
+      "qrCode": "assets/images/qrcode-whatsapp-domfe.svg"
+    }
+  }
+]
