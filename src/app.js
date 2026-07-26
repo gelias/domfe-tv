@@ -2,6 +2,7 @@ import { AudioManager } from './core/audio-manager.js';
 import { loadConfig } from './core/config-loader.js';
 import { PlaylistEngine } from './core/playlist-engine.js';
 import { prioritizeNoticesForDay } from './core/notice-order.js';
+import { prepareRuntimeMode } from './core/runtime-mode.js';
 import { createScene } from './scenes/index.js';
 
 const stage = document.getElementById('stage');
@@ -65,6 +66,7 @@ function setStatus(message, error = false) {
 async function prepare() {
   try {
     ({ settings, playlist } = await loadConfig());
+    ({ settings, playlist } = prepareRuntimeMode(settings, playlist));
     playlist = prioritizeNoticesForDay(playlist);
     document.documentElement.style.setProperty('--scene-transition', `${settings.transitionMs / 2}ms`);
     audio.src = settings.music?.src || '';

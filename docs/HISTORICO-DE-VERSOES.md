@@ -131,3 +131,4 @@
 - Cenas “Nas exposições de desobsessão” e “Como acontece a reunião” unificadas em um único aviso mais conciso.
 - Campanha permanente passou a divulgar PIX da Domfe e compra direta das cestas pelo WhatsApp do Sacolão, com entrega na casa.
 - Opções de doação da campanha reorganizadas em faixas horizontais para melhorar leitura, equilíbrio e distância dos controles.
+- Modo de revisão pelo GitHub Pages adicionado: música desativada e vídeo substituído por aviso temporário, sem alterar a execução local completa.
