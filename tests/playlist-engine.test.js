@@ -87,3 +87,32 @@ test('loop false encerra depois da última cena', async () => {
   assert.equal(engine.index, 0);
   assert.equal(scheduler.jobs.size, 0);
 });
+
+test('embaralha as mensagens novamente a cada passagem pela introdução', async () => {
+  const playlist = [
+    { type: 'message', duration: 1, shuffleFollowingQuotes: true },
+    { type: 'quote', duration: 1, title: 'A' },
+    { type: 'quote', duration: 1, title: 'B' },
+    { type: 'quote', duration: 1, title: 'C' },
+    { type: 'closing', duration: 1 }
+  ];
+  const activated = [];
+  const engine = new PlaylistEngine({
+    playlist,
+    settings: { defaultDuration: 1, loop: true },
+    scheduler: { setTimeout: () => 1, clearTimeout: () => {} },
+    random: () => 0,
+    activate: async item => {
+      activated.push(item.title || item.type);
+      return { dispose() {} };
+    }
+  });
+
+  await engine.start();
+  assert.deepEqual(playlist.slice(1, 4).map(item => item.title), ['B', 'C', 'A']);
+  await engine.goTo(0);
+  assert.deepEqual(playlist.slice(1, 4).map(item => item.title), ['C', 'A', 'B']);
+  assert.equal(playlist[0].type, 'message');
+  assert.equal(playlist[4].type, 'closing');
+  assert.deepEqual(activated, ['message', 'message']);
+});

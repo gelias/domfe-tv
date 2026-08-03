@@ -1,11 +1,12 @@
 const VIDEO_TYPE = 'video';
 
 export class PlaylistEngine {
-  constructor({ playlist, settings, activate, scheduler = globalThis }) {
+  constructor({ playlist, settings, activate, scheduler = globalThis, random = Math.random }) {
     this.playlist = playlist;
     this.settings = settings;
     this.activate = activate;
     this.scheduler = scheduler;
+    this.random = random;
     this.index = -1;
     this.timer = null;
     this.timerStartedAt = 0;
@@ -23,6 +24,16 @@ export class PlaylistEngine {
 
   get currentItem() {
     return this.playlist[this.index];
+  }
+
+  shuffleFollowingQuotes() {
+    if (!this.currentItem?.shuffleFollowingQuotes) return;
+    let end = this.index + 1;
+    while (this.playlist[end]?.type === 'quote') end += 1;
+    for (let cursor = end - 1; cursor > this.index + 1; cursor -= 1) {
+      const target = this.index + 1 + Math.floor(this.random() * (cursor - this.index));
+      [this.playlist[cursor], this.playlist[target]] = [this.playlist[target], this.playlist[cursor]];
+    }
   }
 
   clearTimer() {
@@ -54,6 +65,7 @@ export class PlaylistEngine {
     await this.controller?.dispose?.();
     this.controller = null;
     this.index = ((target % this.playlist.length) + this.playlist.length) % this.playlist.length;
+    this.shuffleFollowingQuotes();
     const item = this.currentItem;
     const complete = () => {
       if (runId !== this.runId || this.paused) return;

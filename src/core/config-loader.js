@@ -9,6 +9,29 @@ async function loadJson(path) {
   return response.json();
 }
 
+export function expandAgenda(playlist, files) {
+  const agendaFiles = Array.isArray(files) ? files.filter(file => typeof file === 'string') : [];
+  return playlist.flatMap(item => {
+    if (item.type !== 'agenda' || !item.dynamicSource) return [item];
+    return agendaFiles.map((image, index) => ({
+      type: 'agenda',
+      duration: item.duration,
+      title: index === 0 ? 'Programação mensal' : `Programação mensal — semana ${index}`,
+      image
+    }));
+  });
+}
+
+async function loadAgendaFiles() {
+  try {
+    const data = await loadJson('api/agenda');
+    return data.files;
+  } catch (error) {
+    console.warn('Não foi possível descobrir os cards da programação mensal.', error);
+    return [];
+  }
+}
+
 export function validateConfig(settings, playlist) {
   if (!settings || typeof settings !== 'object') throw new Error('Configurações inválidas.');
   if (!Array.isArray(playlist) || playlist.length === 0) throw new Error('A playlist está vazia.');
@@ -24,9 +47,10 @@ export function validateConfig(settings, playlist) {
 }
 
 export async function loadConfig() {
-  const [settings, playlist] = await Promise.all([
+  const [settings, playlist, agendaFiles] = await Promise.all([
     loadJson('config/settings.json'),
-    loadJson('config/playlist.json')
+    loadJson('config/playlist.json'),
+    loadAgendaFiles()
   ]);
-  return validateConfig(settings, playlist);
+  return validateConfig(settings, expandAgenda(playlist, agendaFiles));
 }

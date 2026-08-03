@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { validateConfig } from '../src/core/config-loader.js';
+import { expandAgenda, validateConfig } from '../src/core/config-loader.js';
 import { readFile } from 'node:fs/promises';
 
 test('aceita playlist local válida', () => {
@@ -16,6 +16,30 @@ test('rejeita vídeo sem arquivo local', () => {
     () => validateConfig({ defaultDuration: 10 }, [{ type: 'video', src: '' }]),
     /vídeo local não informado/
   );
+});
+
+test('expande a agenda dinâmica na ordem recebida e remove a cena-modelo', () => {
+  const playlist = [
+    { type: 'welcome', duration: 5 },
+    { type: 'agenda', duration: 12, dynamicSource: 'content/agenda' },
+    { type: 'closing', duration: 5 }
+  ];
+  const expanded = expandAgenda(playlist, [
+    'content/agenda/mes.png',
+    'content/agenda/semana1.png',
+    'content/agenda/semana2.png'
+  ]);
+  assert.deepEqual(expanded.filter(item => item.type === 'agenda').map(item => item.image), [
+    'content/agenda/mes.png',
+    'content/agenda/semana1.png',
+    'content/agenda/semana2.png'
+  ]);
+  assert.equal(expanded.some(item => item.dynamicSource), false);
+});
+
+test('agenda dinâmica sem arquivos não deixa cena vazia', () => {
+  const expanded = expandAgenda([{ type: 'agenda', duration: 12, dynamicSource: 'content/agenda' }], []);
+  assert.deepEqual(expanded, []);
 });
 
 test('playlist inclui todos os grupos de atividades do flyer', async () => {
@@ -100,14 +124,28 @@ test('início da semana inclui destaque ilustrado contextual', async () => {
   assert.match(start.highlights[0].imageAlt, /cadeirante/i);
 });
 
-test('mensagens edificantes começam com introdução antes das citações', async () => {
+test('Mensagens Edificantes começam com introdução antes das citações', async () => {
   const playlist = JSON.parse(await readFile(new URL('../config/playlist.json', import.meta.url), 'utf8'));
-  const introIndex = playlist.findIndex(item => item.type === 'message' && item.title === 'Mensagens edificantes');
+  const introIndex = playlist.findIndex(item => item.type === 'message' && item.title === 'Mensagens Edificantes');
   const quoteIndex = playlist.findIndex(item => item.type === 'quote');
   assert.ok(introIndex >= 0);
   assert.equal(quoteIndex, introIndex + 1);
   assert.match(playlist[introIndex].text, /^Em instantes iniciaremos nossas atividades\. Aproveite este momento/i);
   assert.equal(playlist[introIndex].eyebrow, undefined);
+  assert.deepEqual(
+    playlist.slice(introIndex + 1, introIndex + 5).map(item => item.title),
+    ['Renovar para viver melhor', 'Semear o futuro', 'Educação que ilumina', 'O bem começa em casa']
+  );
+  assert.deepEqual(
+    playlist.slice(introIndex + 1, introIndex + 5).map(item => item.source),
+    [
+      'Apóstolo Paulo — Romanos 12:2',
+      'Emmanuel — Taça de Luz',
+      'Joanna de Ângelis',
+      'Emmanuel — Educação Evangélica'
+    ]
+  );
+  assert.ok(playlist.filter(item => item.type === 'quote').every(item => item.duration === 15));
 });
 
 test('Conheça a Domfe começa com capa e sequencia história e atividades', async () => {

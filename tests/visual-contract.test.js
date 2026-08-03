@@ -5,6 +5,7 @@ import test from 'node:test';
 test('contrato visual Full HD preserva tamanhos mínimos', async () => {
   const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
   assert.match(css, /\.scene-title[^}]*clamp\(72px,/s);
+  assert.match(css, /\.quote-title[^}]*color:\s*var\(--blue-dark\)/s);
   assert.match(css, /\.scene-weekly[^}]*align-items:\s*flex-start/s);
   assert.match(css, /\.weekly-highlight-qr-only[^}]*justify-content:\s*end/s);
   assert.match(css, /\.weekly-domfe-tv-mark[^}]*order:\s*-1[^}]*display:\s*grid/s);

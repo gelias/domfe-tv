@@ -132,3 +132,13 @@
 - Campanha permanente passou a divulgar PIX da Domfe e compra direta das cestas pelo WhatsApp do Sacolão, com entrega na casa.
 - Opções de doação da campanha reorganizadas em faixas horizontais para melhorar leitura, equilíbrio e distância dos controles.
 - Modo de revisão pelo GitHub Pages adicionado: música desativada e vídeo substituído por aviso temporário, sem alterar a execução local completa.
+
+## v2.1
+
+- Programação mensal tornada plugável: o inicializador detecta `mes.png` e os arquivos `semanaN.png` disponíveis em `content/agenda/`.
+- `mes.png` passa a ser sempre o primeiro card mensal, seguido das semanas em ordem numérica; meses com menos de cinco semanas não geram cenas vazias.
+- Título da cena atualizado para “Mensagens Edificantes”, com capitalização institucional consistente.
+- Quatro novas Mensagens Edificantes adicionadas sobre renovação, educação e evangelização no lar, com autoria e referência bibliográfica.
+- Componente de citação atualizado para exibir títulos opcionais nas novas Mensagens Edificantes.
+- Tempo de exibição de cada Mensagem Edificante padronizado em 15 segundos.
+- Ordem das Mensagens Edificantes embaralhada novamente a cada passagem do programa no loop.

@@ -89,38 +89,7 @@
   {
     "type": "agenda",
     "duration": 12,
-    "title": "Programação de julho",
-    "image": "content/agenda/julho-01.png"
-  },
-  {
-    "type": "agenda",
-    "duration": 12,
-    "title": "Programação de julho — card 2",
-    "image": "content/agenda/julho-02.png"
-  },
-  {
-    "type": "agenda",
-    "duration": 12,
-    "title": "Programação de julho — card 3",
-    "image": "content/agenda/julho-03.png"
-  },
-  {
-    "type": "agenda",
-    "duration": 12,
-    "title": "Programação de julho — card 4",
-    "image": "content/agenda/julho-04.png"
-  },
-  {
-    "type": "agenda",
-    "duration": 12,
-    "title": "Programação de julho — card 5",
-    "image": "content/agenda/julho-05.png"
-  },
-  {
-    "type": "agenda",
-    "duration": 12,
-    "title": "Programação de julho — card 6",
-    "image": "content/agenda/julho-06.png"
+    "dynamicSource": "content/agenda"
   },
   {
     "type": "notice",
@@ -242,12 +211,41 @@
   {
     "type": "message",
     "duration": 12,
-    "title": "Mensagens edificantes",
+    "title": "Mensagens Edificantes",
+    "shuffleFollowingQuotes": true,
     "text": "Em instantes iniciaremos nossas atividades. Aproveite este momento para harmonizar seus pensamentos."
   },
   {
     "type": "quote",
-    "duration": 22,
+    "duration": 15,
+    "title": "Renovar para viver melhor",
+    "quote": "Transformem-se pela renovação da sua mente.",
+    "source": "Apóstolo Paulo — Romanos 12:2"
+  },
+  {
+    "type": "quote",
+    "duration": 15,
+    "title": "Semear o futuro",
+    "quote": "O Espiritismo, sobretudo, é obra de educação.",
+    "source": "Emmanuel — Taça de Luz"
+  },
+  {
+    "type": "quote",
+    "duration": 15,
+    "title": "Educação que ilumina",
+    "quote": "Para que a educação se faça completa, é indispensável a orientação religiosa.",
+    "source": "Joanna de Ângelis"
+  },
+  {
+    "type": "quote",
+    "duration": 15,
+    "title": "O bem começa em casa",
+    "quote": "Evangelizado o indivíduo, evangeliza-se a família.",
+    "source": "Emmanuel — Educação Evangélica"
+  },
+  {
+    "type": "quote",
+    "duration": 15,
     "quote": "A luta maior não é contra os outros, mas contra as imperfeições que ainda trazemos em nós.",
     "source": "Reflexão inspirada nos ensinamentos de Joanna de Ângelis"
   },

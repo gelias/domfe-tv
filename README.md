@@ -26,8 +26,14 @@ Antes do uso na associação, copie os arquivos autorizados:
 
 - `assets/audio/instrumental.mp3` — música instrumental de fundo;
 - `assets/video/evangelho-no-lar.mp4` — vídeo local integral;
-- card mensal em `content/agenda/`, com o caminho atualizado em
-  `config/playlist.json`.
+- cards mensais em `content/agenda/`, usando os nomes `mes.png`,
+  `semana1.png`, `semana2.png` e assim por diante.
+
+Para atualizar a programação mensal, substitua `mes.png` e os arquivos de semana
+pelos novos PNGs. Apague arquivos de semanas que não existirem no novo mês. A
+Domfe TV detecta os arquivos ao iniciar, exibe `mes.png` primeiro e depois somente
+as semanas disponíveis, em ordem numérica. Não é necessário editar o JSON nem o
+código da aplicação.
 
 Esta cópia local inclui o instrumental e o vídeo autorizado. Se o vídeo estiver
 ausente ou corrompido, a cena avança por evento de erro, sem usar temporizador.
@@ -36,7 +42,8 @@ A versão operacional não depende do YouTube nem de internet.
 ## Configuração
 
 - `config/settings.json`: loop, transição, duração padrão e música;
-- `config/playlist.json`: ordem, conteýo e duração das cenas.
+- `config/playlist.json`: ordem, conteúdo e duração das cenas;
+- `content/agenda/`: programação mensal descoberta automaticamente pelo inicializador.
 
 Cenas comuns usam `duration` em segundos. Cenas `video` não aceitam duração:
 o motor avança apenas quando o elemento emite `ended` ou `error`.

@@ -4,7 +4,9 @@ from __future__ import annotations
 
 import contextlib
 import http.server
+import json
 import os
+import re
 import socket
 import socketserver
 import sys
@@ -15,6 +17,22 @@ from pathlib import Path
 
 HOST = "127.0.0.1"
 START_PORT = 8765
+AGENDA_DIRECTORY = Path("content/agenda")
+AGENDA_FILE_PATTERN = re.compile(r"^(mes|semana([1-9][0-9]*))\.png$", re.IGNORECASE)
+
+
+def agenda_files(directory: Path = AGENDA_DIRECTORY) -> list[str]:
+    """Lista os cards mensais, sempre com mes.png antes das semanas."""
+    if not directory.is_dir():
+        return []
+
+    matches = []
+    for path in directory.iterdir():
+        match = AGENDA_FILE_PATTERN.fullmatch(path.name)
+        if path.is_file() and match:
+            order = 0 if match.group(1).lower() == "mes" else int(match.group(2))
+            matches.append((order, path.name))
+    return [f"content/agenda/{name}" for _, name in sorted(matches, key=lambda item: (item[0], item[1].lower()))]
 
 
 def available_port(start: int = START_PORT) -> int:
@@ -29,6 +47,17 @@ def available_port(start: int = START_PORT) -> int:
 
 
 class DomfeHandler(http.server.SimpleHTTPRequestHandler):
+    def do_GET(self) -> None:
+        if self.path.split("?", 1)[0] == "/api/agenda":
+            payload = json.dumps({"files": agenda_files()}, ensure_ascii=False).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(payload)))
+            self.end_headers()
+            self.wfile.write(payload)
+            return
+        super().do_GET()
+
     def end_headers(self) -> None:
         self.send_header("Cache-Control", "no-store")
         super().end_headers()
