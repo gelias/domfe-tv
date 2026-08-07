@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Arte Espírita em Destaque</title>
+  <defs>
+    <linearGradient id="blue" x1="24" y1="18" x2="132" y2="144" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3977c5"/>
+      <stop offset="1" stop-color="#173f79"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#blue)" d="M80 12c-37.6 0-68 26.7-68 59.7 0 26.6 20.2 49.4 48.2 56.9 7.8 2.1 12.1 8.3 12.1 15.4v4h15.4v-4c0-7.1 4.3-13.3 12.1-15.4 28-7.5 48.2-30.3 48.2-56.9C148 38.7 117.6 12 80 12Z"/>
+  <path fill="#fff" d="M49 91c8-27 22-45 43-56-5 11-7 21-5 29 9-6 18-8 27-7-10 6-17 14-21 24 9-1 17 1 24 6-14 3-24 9-31 19l-8 14-9-13c-6-8-12-13-20-16Z" opacity=".96"/>
+  <path fill="#8fc5f4" d="M43 75c13 3 23 9 30 18-1-15 3-28 12-39-18 8-32 15-42 21Z"/>
+</svg>

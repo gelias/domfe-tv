@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
+  <title id="title">Estudo on-line</title>
+  <desc id="description">Notebook com três participantes em uma sala de estudo virtual e livros ao lado.</desc>
+  <defs>
+    <linearGradient id="screen" x1="180" y1="70" x2="470" y2="275" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3977c5"/>
+      <stop offset="1" stop-color="#173f79"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#173f79" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="139" y="43" width="366" height="242" rx="22" fill="#fff" stroke="#2356a3" stroke-width="9"/>
+    <rect x="158" y="62" width="328" height="204" rx="10" fill="url(#screen)"/>
+    <path d="M104 286h436l-35 38H139l-35-38Z" fill="#dce9f7" stroke="#2356a3" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M279 286h86l-9 15h-68l-9-15Z" fill="#fff" opacity=".9"/>
+  </g>
+  <g>
+    <rect x="177" y="82" width="88" height="151" rx="14" fill="#fff" opacity=".96"/>
+    <circle cx="221" cy="130" r="27" fill="#b86c3e"/>
+    <path d="M194 126c2-30 51-36 56 2-12-11-21-16-30-14-10 2-18 7-26 12Z" fill="#38261f"/>
+    <path d="M187 218c2-40 17-60 34-60s33 20 35 60h-69Z" fill="#ef9f45"/>
+    <path d="M209 133c4 4 8 4 12 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g>
+    <rect x="278" y="82" width="88" height="151" rx="14" fill="#fff" opacity=".96"/>
+    <circle cx="322" cy="130" r="27" fill="#e1a272"/>
+    <path d="M294 128c0-36 57-38 57 3-9-14-19-20-29-19-11 1-20 7-28 16Z" fill="#5d3928"/>
+    <path d="M288 218c2-40 17-60 34-60s33 20 35 60h-69Z" fill="#65a7d7"/>
+    <path d="M312 134c4 4 8 4 12 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g>
+    <rect x="379" y="82" width="88" height="151" rx="14" fill="#fff" opacity=".96"/>
+    <circle cx="423" cy="130" r="27" fill="#8e563a"/>
+    <path d="M397 129c-3-32 49-42 54-4-13-8-25-12-35-9-8 2-14 6-19 13Z" fill="#241d1a"/>
+    <path d="M389 218c2-40 17-60 34-60s33 20 35 60h-69Z" fill="#75b77e"/>
+    <path d="M413 134c4 4 8 4 12 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(18 226)">
+    <path d="M0 53 86 36l9 41L9 94 0 53Z" fill="#3977c5"/>
+    <path d="m9 36 84-17 7 18-85 17-6-18Z" fill="#fff" stroke="#2356a3" stroke-width="5"/>
+    <path d="m21 18 79-15 5 18-79 15-5-18Z" fill="#efb94e"/>
+  </g>
+  <g transform="translate(521 215)">
+    <circle cx="43" cy="43" r="39" fill="#fff" stroke="#2356a3" stroke-width="7"/>
+    <path d="M34 26 60 43 34 60V26Z" fill="#2356a3"/>
+  </g>
+</svg>

@@ -5,7 +5,7 @@
     "duration": 16,
     "eyebrow": "Associação Espírita Dom Feliciano",
     "title": "Seja muito bem-vindo!",
-    "text": "Que a paz de Jesus esteja em seu coração.\nEm instantes iniciaremos nossa atividade."
+    "text": "Que a paz de Jesus esteja em seu coração.\nEm instantes iniciaremos nossas atividades."
   },
   {
     "type": "about",
@@ -15,7 +15,7 @@
   },
   {
     "type": "history",
-    "duration": 18,
+    "duration": 28,
     "title": "Quem foi Dom Feliciano?",
     "text": "Feliciano José Rodrigues de Araújo Prates foi o primeiro bispo nascido no Rio Grande do Sul. Seu nome inspira a nossa casa, fundada em 31 de março de 1945, a cultivar estudo, fraternidade e serviço ao próximo.",
     "image": "assets/images/dom-feliciano.jpg",
@@ -45,7 +45,7 @@
       { "day": "Quarta-feira", "time": "20h", "title": "Estudo das Obras Básicas", "detail": "Aberto ao público — On-line" },
       { "day": "Quinta-feira", "time": "15h", "title": "Exposição doutrinária e orientação espiritual" },
       { "day": "Quinta-feira", "time": "20h", "title": "Estudo Sistematizado da Doutrina Espírita — ESDE" },
-      { "day": "Quinta-feira", "time": "21h40", "title": "Preces e irradiações", "detail": "Canal do YouTube" }
+      { "day": "Quinta-feira", "time": "21h40", "title": "Preces e irradiações", "detail": "Canal do YouTube • Acesse pelo QR", "detailNoWrap": true }
     ],
     "highlights": [
       { "day": "Quinta-feira", "qrCode": "assets/images/qrcode-irradiacoes.svg", "qrAlt": "QR Code para enviar nomes às irradiações", "showDomfeTvMark": true }
@@ -59,12 +59,37 @@
     "items": [
       { "day": "Sexta-feira", "time": "20h15", "title": "Exposição doutrinária e orientação espiritual" },
       { "day": "Sábado", "time": "8h30", "title": "Estudo das Obras Básicas", "detail": "Aberto ao público — Presencial e on-line" },
-      { "day": "Sábado", "time": "13h30", "title": "Oficina de arte", "detail": "Para todos da família" },
+      { "day": "Sábado", "time": "13h30", "title": "Oficinas de arte", "detail": "Para todos da família" },
       { "day": "Sábado", "time": "14h30", "title": "Evangelização infantojuvenil e família", "detail": "Crianças de 0 a 17 anos, pais e responsáveis" }
     ],
     "highlights": [
       { "day": "Sexta-feira", "image": "assets/images/evangelizacao-jesus-criancas-v2.png", "imageAlt": "Ilustração de Jesus acolhendo crianças na evangelização" }
     ]
+  },
+  {
+    "type": "study",
+    "duration": 32,
+    "eyebrow": "Formação doutrinária",
+    "title": "Estude o Espiritismo",
+    "badgeImage": "assets/images/logo-domfe-jovem.png",
+    "badgeAlt": "Domfe Jovem — Construindo o futuro do Espiritismo",
+    "secondaryImage": "assets/images/estudo-online.svg",
+    "secondaryImageAlt": "Ilustração de participantes estudando on-line em um notebook com livros ao lado",
+    "initiatives": [
+      {
+        "title": "Evangelização Infantojuvenil + Ciclo de Pais e Responsáveis",
+        "detail": "Aos sábados"
+      },
+      {
+        "title": "Estudo Sistematizado da Doutrina Espírita",
+        "detail": "Presencial"
+      },
+      {
+        "title": "Estudo das Obras Básicas",
+        "detail": "Presencial e on-line"
+      }
+    ],
+    "footer": "Procure a recepção para mais informações"
   },
   {
     "type": "services",
@@ -80,7 +105,7 @@
   },
   {
     "type": "agenda",
-    "duration": 10,
+    "duration": 12,
     "title": "Programação mensal",
     "text": "Exposições abertas ao público",
     "icon": "assets/images/icone-agenda.svg",
@@ -88,7 +113,7 @@
   },
   {
     "type": "agenda",
-    "duration": 12,
+    "duration": 22,
     "dynamicSource": "content/agenda"
   },
   {
@@ -168,30 +193,8 @@
   },
   {
     "type": "notice",
-    "duration": 18,
-    "title": "Aprender e crescer em família",
-    "noticeGroup": "common",
-    "titleNoWrap": true,
-    "text": "Evangelização e estudo das Obras Básicas aos sábados.\nInformações no mural ou na recepção.",
-    "image": "assets/images/evangelizacao-jesus-criancas-v2.png",
-    "imageStyle": "illustration",
-    "imageAlt": "Ilustração de Jesus acolhendo crianças durante a Evangelização",
-    "badgeImage": "assets/images/logo-domfe-jovem.png",
-    "badgeAlt": "Domfe Jovem — Construindo o futuro do Espiritismo",
-    "badgePlacement": "visual"
-  },
-  {
-    "type": "notice",
-    "duration": 18,
-    "title": "Oficina de Arte",
-    "text": "Nova atividade para toda a família",
-    "image": "content/avisos/oficina-de-arte-agosto-2026.png",
-    "imageAlt": "Flyer da Oficina de Arte da Domfe, aos sábados, das 13h30 às 14h30"
-  },
-  {
-    "type": "notice",
     "noticeLayout": "campaign",
-    "duration": 18,
+    "duration": 28,
     "title": "Campanha permanente",
     "headline": "Sua doação alimenta muito mais do que o corpo.",
     "text": "Doe alimentos ou contribua para a compra das cestas básicas.",
@@ -207,6 +210,25 @@
       }
     ],
     "footer": "Entregas na sede • Rua Monte Castelo, 674"
+  },
+  {
+    "type": "art",
+    "duration": 12,
+    "title": "Arte Espírita em Destaque"
+  },
+  {
+    "type": "art",
+    "duration": 28,
+    "eyebrow": "Atividade para toda a família",
+    "title": "Oficinas de Arte",
+    "image": "content/avisos/oficina-de-arte-agosto-2026.png",
+    "imageAlt": "Flyer das Oficinas de Arte da Domfe, aos sábados, das 13h30 às 14h30",
+    "highlights": [
+      { "label": "Quando", "value": "Sábados • 13h30 às 14h30" },
+      { "label": "Para quem", "value": "Todas as famílias" },
+      { "label": "Evangelização", "value": "Horário normal • 14h30 às 16h" }
+    ],
+    "footer": "Área da Infância e Juventude • Área da Família"
   },
   {
     "type": "message",

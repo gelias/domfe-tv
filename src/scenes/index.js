@@ -1,9 +1,11 @@
 import { createAgendaScene } from './agenda.js';
+import { createArtScene } from './art.js';
 import { createCampaignScene } from './campaign.js';
 import { createHistoryScene } from './history.js';
 import { createQuoteScene } from './quote.js';
 import { createServicesScene } from './services.js';
 import { createSocialsScene } from './socials.js';
+import { createStudyScene } from './study.js';
 import { createTextScene } from './text.js';
 import { createVideoScene } from './video.js';
 import { createVinhetaScene } from './vinheta.js';
@@ -17,6 +19,8 @@ const factories = {
   socials: createSocialsScene,
   notice: item => item.noticeLayout === 'campaign' ? createCampaignScene(item) : createTextScene(item),
   agenda: createAgendaScene,
+  study: createStudyScene,
+  art: createArtScene,
   campaign: createCampaignScene,
   video: createVideoScene,
   message: createTextScene,

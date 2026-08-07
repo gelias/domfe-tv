@@ -1,6 +1,6 @@
 const SUPPORTED_SCENES = new Set([
   'vinheta', 'welcome', 'about', 'history', 'services', 'notice',
-  'agenda', 'campaign', 'socials', 'video', 'message', 'quote', 'closing'
+  'agenda', 'campaign', 'study', 'art', 'socials', 'video', 'message', 'quote', 'closing'
 ]);
 
 async function loadJson(path) {

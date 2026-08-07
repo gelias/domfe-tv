@@ -5,6 +5,23 @@ import test from 'node:test';
 test('contrato visual Full HD preserva tamanhos mínimos', async () => {
   const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
   assert.match(css, /\.scene-title[^}]*clamp\(72px,/s);
+  assert.doesNotMatch(css, /\.start-card p\s*\{/s);
+  assert.match(css, /\.start-status\.is-error[^}]*display:\s*block/s);
+  assert.match(css, /\.study-copy h2[^}]*clamp\(28px,/s);
+  assert.match(css, /\.scene-study[^}]*padding:\s*6\.5vh 4vw 12\.5vh/s);
+  assert.match(css, /\.study-footer[^}]*font-weight:\s*900/s);
+  assert.doesNotMatch(css.match(/\.study-footer\s*\{[^}]*\}/s)?.[0] || '', /background|border|padding/);
+  assert.match(css, /\.study-layout[^}]*1\.55fr[^}]*300px[^}]*\.45fr/s);
+  assert.match(css, /\.study-information[^}]*padding-top:\s*3rem/s);
+  assert.match(css, /\.study-grid[^}]*grid-auto-rows:\s*1fr/s);
+  assert.match(css, /\.study-youth-visual[^}]*grid-template-columns:/s);
+  assert.match(css, /\.study-youth-visual-badge-only[^}]*grid-template-columns:\s*1fr/s);
+  assert.match(css, /\.study-badge[^}]*width:\s*116px[^}]*height:\s*116px/s);
+  assert.match(css, /\.study-online-illustration[^}]*object-fit:\s*contain/s);
+  assert.match(css, /\.art-intro-note[^}]*clamp\(38px,/s);
+  assert.match(css, /\.art-card-image[^}]*object-fit:\s*contain/s);
+  assert.match(css, /\.art-feature-layout[^}]*grid-template-columns:/s);
+  assert.match(css, /\.art-feature-value[^}]*clamp\(38px,/s);
   assert.match(css, /\.quote-title[^}]*color:\s*var\(--blue-dark\)/s);
   assert.match(css, /\.scene-weekly[^}]*align-items:\s*flex-start/s);
   assert.match(css, /\.weekly-highlight-qr-only[^}]*justify-content:\s*end/s);
@@ -36,6 +53,7 @@ test('contrato visual Full HD preserva tamanhos mínimos', async () => {
   assert.match(css, /\.lead[^}]*clamp\(38px,/s);
   assert.match(css, /\.secondary[^}]*clamp\(28px,/s);
   assert.match(css, /prefers-reduced-motion/);
+  assert.match(css, /\.vignette-handwritten[^}]*clamp\(46px,[^}]*64px/s);
 });
 
 test('versão operacional não referencia YouTube', async () => {

@@ -142,3 +142,39 @@
 - Componente de citação atualizado para exibir títulos opcionais nas novas Mensagens Edificantes.
 - Tempo de exibição de cada Mensagem Edificante padronizado em 15 segundos.
 - Ordem das Mensagens Edificantes embaralhada novamente a cada passagem do programa no loop.
+
+## v2.2
+
+- Programa “Estude o Espiritismo” adicionado com Evangelização Infantojuvenil e Ciclo de Pais e Responsáveis, ESDE e Estudo das Obras Básicas.
+- Programa “Arte Espírita em Destaque” iniciado com uma cena de abertura própria, preparada para receber novos conteúdos.
+- Abertura de “Arte Espírita em Destaque” simplificada para exibir somente o ícone e o título.
+- Cena “Oficina de Arte” movida de “Avisos da Casa” para o programa “Arte Espírita em Destaque”.
+- “Outras Atividades da Casa” reposicionada para depois de “Formação doutrinária — Estude o Espiritismo”.
+- Chamada “Procure a recepção para mais informações” simplificada, sem faixa ou moldura, seguindo o estilo de “Solicite na recepção”.
+- Tempo da cena “Formação doutrinária — Estude o Espiritismo” ampliado de 22 para 32 segundos.
+- Cena “Aprender e crescer em família” incorporada à Formação Doutrinária, reutilizando a ilustração da Evangelização e o selo Domfe Jovem; a cena anterior foi removida dos avisos.
+- Três tiles da Formação Doutrinária padronizados com a mesma altura, inclusive quando o título ocupa mais de uma linha.
+- Formação Doutrinária recomposta para evitar cortes: cabeçalho e cards compactados, ilustração centralizada e selo reposicionado abaixo da imagem.
+- Conteúdo dos tiles da Formação Doutrinária recebeu tipografia e espaçamento menores para reduzir a altura do conjunto e liberar a chamada inferior.
+- Conjunto de Evangelização e Domfe Jovem alinhado ao primeiro tile, com nova ilustração offline de estudo remoto posicionada abaixo.
+- Selo Domfe Jovem alinhado ao lado da ilustração de Jesus, sem sobreposição, e chamada da recepção deslocada discretamente para baixo dentro da área segura.
+- Conjunto completo da Formação Doutrinária deslocado para baixo, harmonizando o alinhamento vertical com as demais cenas e preservando a área segura inferior.
+- Tiles da Formação Doutrinária novamente compactados, com menor altura, coluna numérica mais estreita e tipografia interna recalibrada.
+- Bloco dos tiles e chamada da recepção deslocado para baixo, sem alterar a posição do cabeçalho e das ilustrações.
+- Tiles centralizados verticalmente na área útil e chamada da recepção afastada para baixo, antes da margem segura do arco azul.
+- Selo Domfe Jovem ampliado para equilibrar sua presença visual com a ilustração de Jesus e das crianças.
+- Texto de boas-vindas atualizado para “Em instantes iniciaremos nossas atividades.”
+- Tela inicial simplificada para exibir somente os logotipos Domfe e Domfe TV e o botão “Iniciar programação”; mensagens aparecem apenas em caso de erro.
+- Frase manuscrita “Domfe! Juntos somos melhores!” recebeu sublinhado em fade após o término da revelação das letras.
+- Sublinhado da frase manuscrita removido e tipografia ampliada discretamente para ganhar presença na vinheta.
+- Tempo da cena “Quem foi Dom Feliciano?” ampliado de 18 para 28 segundos.
+- Cenas da programação mensal ampliadas em 10 segundos: abertura com 20 segundos e cada card com 22 segundos.
+- Capa da Programação Mensal reduzida de 20 para 12 segundos; cards mantidos em 22 segundos.
+- Cena “Sua doação alimenta muito mais do que o corpo” ampliada de 18 para 28 segundos.
+- Cena “Oficina de Arte” ampliada de 18 para 28 segundos.
+- Item de sábado da Agenda Semanal atualizado de “Oficina de arte” para “Oficinas de arte”.
+- Item “Preces e irradiações” recebeu a chamada curta “Acesse pelo QR” junto à indicação do canal do YouTube.
+- Chamada do QR Code em “Preces e irradiações” mantida em uma única linha com tipografia compacta.
+- Ilustração de Jesus com as crianças removida da Formação Doutrinária; selo Domfe Jovem mantido e centralizado acima da imagem de estudo on-line.
+- Coluna dos tiles da Formação Doutrinária ampliada para manter “Evangelização Infantojuvenil + Ciclo de Pais e Responsáveis” em uma única linha no Full HD.
+- Cena “Oficinas de Arte” reorganizada em duas colunas, mantendo o flyer e reforçando horário, público, Evangelização e áreas responsáveis em texto de alta legibilidade.
