@@ -8,3 +8,8 @@ __pycache__/
 
 # Metadados locais do macOS
 .DS_Store
+
+# Dependências e pacotes desktop
+node_modules/
+dist/
+*.part

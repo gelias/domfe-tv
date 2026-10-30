@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "assets/audio/instrumental.mp3",
+      "label": "Música instrumental",
+      "fileId": "1iod27wjOt7xt3nkkHOR-VMK8QWoLBDe1",
+      "bytes": 176304305,
+      "sha256": "0ab2bb1ba2e7996a8933e620d56afe44fc97372e90e8b21c15e213b21e2bf1cd"
+    },
+    {
+      "path": "assets/video/evangelho-no-lar.mp4",
+      "label": "Vídeo Evangelho no Lar",
+      "fileId": "1qgxucweOFgQm__b9ca5nsIlVt2C914Ah",
+      "bytes": 89909890,
+      "sha256": "fcffd13e9e289a510c16591bbb2f48f134ad5c6184ea8f76b9854b1a7ab3e58d"
+    }
+  ]
+}

@@ -1,5 +1,15 @@
 # Histórico de versões
 
+## v2.3.0 — Aplicativo desktop e preparação de mídias (30/10/2026)
+
+- Aplicativo Electron com a interface existente, janela própria, isolamento do processo de interface e protocolo local com suporte a faixas de áudio/vídeo.
+- Primeiro pacote direcionado ao Windows x64, em formato executável portátil, sem Python e sem mídias pesadas embutidas.
+- Na abertura, confere as mídias por tamanho e SHA-256 e baixa somente arquivos ausentes ou inválidos, inclusive quando o Drive exige confirmação de download.
+- Progresso e opção de tentar novamente na tela inicial; downloads parciais não são usados e arquivos existentes só são substituídos após validação completa.
+- Armazenamento portátil ao lado do executável, com alternativa na pasta de dados do usuário se não houver permissão de escrita; mídias válidas funcionam sem internet.
+- Workflow Windows para testes e geração do executável e checksum; tags de versão publicam os arquivos no GitHub Releases.
+- Reprodução em loop, avanço de vídeo por término/erro e inicializadores Python existentes preservados.
+
 ## Atualização — Recuperação de mídias (30/10/2026)
 
 - Links de recuperação do instrumental e do vídeo registrados em `assets/audio/download.txt` e `assets/video/download.txt`, substituindo os antigos arquivos de instrução.

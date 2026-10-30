@@ -1,0 +1,28 @@
+appId: br.org.domfe.tv
+productName: Domfe TV
+asar: true
+directories:
+  output: dist
+files:
+  - desktop/**
+  - src/**
+  - config/**
+  - content/**
+  - assets/images/**
+  - index.html
+  - styles.css
+  - package.json
+win:
+  icon: assets/images/logo-domfe.png
+  target:
+    - target: portable
+      arch: [x64]
+  artifactName: Domfe-TV-${version}-windows-${arch}.${ext}
+portable:
+  requestExecutionLevel: user
+mac:
+  target: zip
+  category: public.app-category.education
+linux:
+  target: AppImage
+  category: Education

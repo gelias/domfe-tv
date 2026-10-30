@@ -8,6 +8,31 @@ independentes, fundo contínuo, música ambiente e vídeos locais reproduzidos a
 
 Não abra `index.html` diretamente.
 
+### Aplicativo Windows — versão portátil
+
+Baixe `Domfe-TV-2.3.0-windows-x64.exe`, coloque-o em uma pasta própria
+(por exemplo, `Documentos/Domfe TV`) e dê dois cliques. Não é necessário
+instalar Python, Node.js ou configurar um navegador.
+
+Na primeira abertura, o aplicativo confere e baixa automaticamente a música e
+o vídeo, com cerca de 266 MB no total. Mantenha a conexão até concluir e clique
+em **Iniciar programação**. Nas próximas aberturas, as mídias válidas são
+reutilizadas e a programação funciona offline. Downloads interrompidos ou
+inválidos podem ser repetidos pelo botão **Tentar novamente**; arquivos
+incompletos nunca são usados na reprodução.
+
+As mídias ficam em `assets/audio/` e `assets/video/`, ao lado do `.exe`.
+Se essa pasta não permitir escrita, o aplicativo usa
+`%APPDATA%/Domfe TV/assets/`. Para mover a versão portátil sem baixar novamente,
+copie o executável junto com a pasta `assets`. Atualizar apenas o executável
+preserva as mídias que continuam correspondendo ao manifesto.
+
+O pacote inicial é para Windows x64. Esta primeira versão não tem assinatura
+digital; o Windows pode exibir uma indicação de aplicativo não reconhecido.
+O executável e seu checksum ficam disponíveis na página de
+[Releases do projeto](https://github.com/gelias/domfe-tv/releases). Baixe o `.exe`
+da versão desejada. Os arquivos **Source code** são destinados a desenvolvimento.
+
 ### macOS
 
 Dê dois cliques em `INICIAR-DOMFE-TV-MACOS.command`.
@@ -42,13 +67,15 @@ Em um novo clone, as mídias pesadas não são incluídas pelo Git. Se estiverem
 ausentes, abra os links em `assets/audio/download.txt` e
 `assets/video/download.txt` e salve os arquivos nos caminhos indicados acima.
 O Google Drive pode solicitar **Fazer download mesmo assim** para o instrumental.
-Os links permitem recuperação manual; o inicializador não baixa arquivos
-automaticamente. Após o download, a reprodução funciona offline.
+Os links permitem recuperação manual nos inicializadores Python; o aplicativo
+desktop faz a recuperação automaticamente. Após o download, a reprodução
+funciona offline.
 
 ## Configuração
 
 - `config/settings.json`: loop, transição, duração padrão e música;
 - `config/playlist.json`: ordem, conteúdo e duração das cenas;
+- `config/media-manifest.json`: origem, tamanho e SHA-256 das mídias do aplicativo desktop;
 - `content/agenda/`: PNGs de referência e fonte opcional para cenas com `dynamicSource`.
 
 Cenas comuns usam `duration` em segundos. Cenas `video` não aceitam duração:
@@ -78,6 +105,40 @@ continuam ativos antes e depois dos vídeos.
 
 Cada cena devolve um controlador com operações de pausa, retomada, mute e
 descarte. Ao sair, timers, listeners e elementos de mídia são limpos.
+
+## Desenvolvimento e pacote desktop
+
+Com Node.js 24 ou superior:
+
+```bash
+npm ci
+npm run desktop
+```
+
+O aplicativo reutiliza a interface e as cenas existentes. Um protocolo local
+serve os arquivos e as faixas de áudio/vídeo sem depender do servidor Python.
+O acesso ao sistema de arquivos e os downloads ficam no processo principal;
+a interface recebe somente o progresso e a operação de preparação das mídias.
+
+Para gerar o executável portátil no Windows:
+
+```bash
+npm run check
+npm run desktop:windows
+```
+
+O resultado fica em `dist/`. O áudio e o vídeo não são incluídos no pacote.
+O workflow `.github/workflows/desktop.yml` executa os testes e gera esse pacote
+em um runner Windows quando iniciado manualmente ou ao enviar uma tag `v*`.
+Tags `v*` também publicam o executável e seu checksum no GitHub Releases;
+execuções manuais geram somente artefatos de teste. Builds macOS e Linux estão
+configurados para trabalhos futuros, mas precisam de validação nesses sistemas
+antes de distribuição.
+
+Ao trocar uma mídia, atualize o link de recuperação e o `fileId`, o número de
+bytes e o SHA-256 no manifesto. O compartilhamento no Drive deve permitir
+download sem login. O aplicativo verifica o conteúdo em cada inicialização e
+só substitui a mídia depois de receber um arquivo completo com checksum válido.
 
 ## Testes
 

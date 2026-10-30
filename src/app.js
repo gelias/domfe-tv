@@ -4,6 +4,7 @@ import { PlaylistEngine } from './core/playlist-engine.js';
 import { prioritizeNoticesForDay } from './core/notice-order.js';
 import { prepareRuntimeMode } from './core/runtime-mode.js';
 import { createScene } from './scenes/index.js';
+import { prepareDesktopMedia } from './core/desktop-setup.js';
 
 const stage = document.getElementById('stage');
 const sceneHost = document.getElementById('sceneHost');
@@ -65,6 +66,7 @@ function setStatus(message, error = false) {
 
 async function prepare() {
   try {
+    await prepareDesktopMedia(status);
     ({ settings, playlist } = await loadConfig());
     ({ settings, playlist } = prepareRuntimeMode(settings, playlist));
     playlist = prioritizeNoticesForDay(playlist);
