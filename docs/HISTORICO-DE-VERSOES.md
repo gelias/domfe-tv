@@ -1,5 +1,18 @@
 # Histórico de versões
 
+## Atualização — Recuperação de mídias (30/10/2026)
+
+- Links de recuperação do instrumental e do vídeo registrados em `assets/audio/download.txt` e `assets/video/download.txt`, substituindo os antigos arquivos de instrução.
+- Downloads verificados sem autenticação e comparados por SHA-256 com as mídias locais; ambos correspondem integralmente.
+- README atualizado com a recuperação manual em novos clones e o fluxo atual de programação mensal em JSON.
+- Metadados `.DS_Store` do macOS ignorados pelo Git.
+
+## Atualização — Equilíbrio de áudio (16/10/2026)
+
+- Trilha ajustada de 22% para 80% e volume dos vídeos configurado em 33%, aproximando o volume percebido dos arquivos locais atuais em −21 LUFS.
+- Calibração baseada na medição integral das mídias: instrumental em −19,0 LUFS e Evangelho no Lar em −11,3 LUFS antes dos ganhos de reprodução.
+- Volume dos vídeos configurável em `config/settings.json`; fades da trilha e reprodução integral do vídeo preservados.
+
 ## v1.0
 
 - Primeiro MVP.
@@ -178,3 +191,20 @@
 - Ilustração de Jesus com as crianças removida da Formação Doutrinária; selo Domfe Jovem mantido e centralizado acima da imagem de estudo on-line.
 - Coluna dos tiles da Formação Doutrinária ampliada para manter “Evangelização Infantojuvenil + Ciclo de Pais e Responsáveis” em uma única linha no Full HD.
 - Cena “Oficinas de Arte” reorganizada em duas colunas, mantendo o flyer e reforçando horário, público, Evangelização e áreas responsáveis em texto de alta legibilidade.
+- Cards de “Acolhimento e serviço” receberam fundo azul-claro, contorno institucional e sombra reforçada para manter a percepção visual em projetores.
+- Programação mensal atualizada com a capa e os cinco cards semanais de setembro de 2026.
+- Cards quadrados da programação de setembro substituídos por cinco cenas nativas, com datas, temas, expositores e horários em tipografia ampliada para leitura à distância.
+
+## Atualização — Outubro de 2026 (02/10/2026)
+
+- Programação mensal de setembro substituída por cinco semanas de outubro, conforme `10_Escala_Outubro_2026.pdf`, com 18 datas e 22 palestras.
+- Temas e expositores preservados, incluindo as duas palestras de cada segunda-feira e a indicação de público maior de 12 anos.
+- Horários alinhados à agenda semanal da casa: terças e quintas às 15h; segundas e sextas às 20h15. O PDF não informa horários de início.
+- Abreviação do mês configurável por cena; cards de outubro exibem OUT, sem depender da indicação fixa de setembro.
+- Tipografia dos cards mensais ajustada aos mínimos de leitura: temas e horários com 38px ou mais, mês, dia da semana e faixa etária com 28px ou mais.
+- Primeira semana com cards mais compactos: altura mínima reduzida de 390px para 250px e horário aproximado do tema e do expositor, eliminando o excesso de espaço interno.
+- Tag “+12 anos” alinhada à direita dos cards de segunda-feira, mantendo o horário à esquerda.
+- Exposições de 13 e 16 de outubro divididas em tema principal e subtítulo, preservando o conteúdo: tema em destaque, complemento com peso regular e mais espaço antes do expositor. Componente da agenda passa a aceitar subtítulos opcionais.
+- Fonte dos subtítulos reduzida de 38px para 34px a pedido do usuário, reforçando a diferença visual em relação ao tema principal.
+- Revisão das cinco semanas: títulos extensos de 23, 26 e 30 de outubro também divididos em tema e subtítulo de 34px, incluindo a segunda palestra de segunda-feira, preservando o conteúdo e a hierarquia visual adotada nos dias 13 e 16.
+- Agenda mensal passa a ajustar proporcionalmente o conjunto de título e cards à largura e à altura reais da janela, inclusive após mudança de zoom ou entrada em tela cheia. Composição em duas colunas preservada, com margens seguras e limpeza do observador ao sair da cena.

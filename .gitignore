@@ -5,3 +5,6 @@
 # Artefatos locais dos testes Python
 __pycache__/
 *.pyc
+
+# Metadados locais do macOS
+.DS_Store

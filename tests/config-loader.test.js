@@ -48,13 +48,16 @@ test('agenda dinâmica sem arquivos não deixa cena vazia', () => {
   assert.deepEqual(expanded, []);
 });
 
-test('programação mensal usa 12 segundos na abertura e 22 segundos por card', async () => {
+test('programação mensal usa cenas nativas com informações legíveis', async () => {
   const playlist = JSON.parse(await readFile(new URL('../config/playlist.json', import.meta.url), 'utf8'));
   const agenda = playlist.filter(item => item.type === 'agenda');
   assert.equal(agenda[0].duration, 12);
-  assert.equal(agenda[1].duration, 22);
-  const expanded = expandAgenda(agenda, ['content/agenda/mes.png', 'content/agenda/semana1.png']);
-  assert.deepEqual(expanded.map(item => item.duration), [12, 22, 22]);
+  assert.equal(agenda.length, 6);
+  assert.deepEqual(agenda.slice(1).map(item => item.title), [
+    '1ª semana', '2ª semana', '3ª semana', '4ª semana', '5ª semana'
+  ]);
+  assert.equal(agenda.slice(1).every(item => Array.isArray(item.entries) && item.entries.length > 0), true);
+  assert.equal(agenda.slice(1).some(item => item.image || item.dynamicSource), false);
 });
 
 test('playlist inclui todos os grupos de atividades do flyer', async () => {

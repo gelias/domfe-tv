@@ -1,6 +1,6 @@
 import { el, section } from './helpers.js';
 
-export function createVideoScene(item, { complete, muted }) {
+export function createVideoScene(item, { complete, muted, videoVolume = 1 }) {
   const element = section('video');
   const shell = el('div', 'video-shell');
   const video = el('video');
@@ -9,6 +9,7 @@ export function createVideoScene(item, { complete, muted }) {
   video.playsInline = true;
   video.preload = 'auto';
   video.muted = muted;
+  video.volume = videoVolume;
   video.setAttribute('aria-label', item.title || 'Vídeo institucional');
   shell.append(video);
   element.append(shell);

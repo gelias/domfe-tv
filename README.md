@@ -26,27 +26,39 @@ Antes do uso na associação, copie os arquivos autorizados:
 
 - `assets/audio/instrumental.mp3` — música instrumental de fundo;
 - `assets/video/evangelho-no-lar.mp4` — vídeo local integral;
-- cards mensais em `content/agenda/`, usando os nomes `mes.png`,
-  `semana1.png`, `semana2.png` e assim por diante.
+- programação mensal em `config/playlist.json`, nas cenas `agenda` com `entries`.
 
-Para atualizar a programação mensal, substitua `mes.png` e os arquivos de semana
-pelos novos PNGs. Apague arquivos de semanas que não existirem no novo mês. A
-Domfe TV detecta os arquivos ao iniciar, exibe `mes.png` primeiro e depois somente
-as semanas disponíveis, em ordem numérica. Não é necessário editar o JSON nem o
-código da aplicação.
+Para atualizar a programação mensal atual, edite as cinco cenas semanais em
+`config/playlist.json`, com datas, horários, temas e expositores. Os PNGs em
+`content/agenda/` permanecem como material de referência. A descoberta automática
+de PNGs pelo inicializador continua disponível para cenas com
+`"dynamicSource": "content/agenda"`.
 
 Esta cópia local inclui o instrumental e o vídeo autorizado. Se o vídeo estiver
 ausente ou corrompido, a cena avança por evento de erro, sem usar temporizador.
 A versão operacional não depende do YouTube nem de internet.
 
+Em um novo clone, as mídias pesadas não são incluídas pelo Git. Se estiverem
+ausentes, abra os links em `assets/audio/download.txt` e
+`assets/video/download.txt` e salve os arquivos nos caminhos indicados acima.
+O Google Drive pode solicitar **Fazer download mesmo assim** para o instrumental.
+Os links permitem recuperação manual; o inicializador não baixa arquivos
+automaticamente. Após o download, a reprodução funciona offline.
+
 ## Configuração
 
 - `config/settings.json`: loop, transição, duração padrão e música;
 - `config/playlist.json`: ordem, conteúdo e duração das cenas;
-- `content/agenda/`: programação mensal descoberta automaticamente pelo inicializador.
+- `content/agenda/`: PNGs de referência e fonte opcional para cenas com `dynamicSource`.
 
 Cenas comuns usam `duration` em segundos. Cenas `video` não aceitam duração:
 o motor avança apenas quando o elemento emite `ended` ou `error`.
+
+Os volumes são ajustados em `config/settings.json`, de 0 a 1: `music.volume`
+controla a trilha e `video.volume` controla os vídeos. Para os arquivos locais
+atuais, a trilha usa 0,8 e o vídeo 0,33 para aproximar o volume percebido.
+Ao substituir as mídias, confira novamente esse equilíbrio. Os fades da trilha
+continuam ativos antes e depois dos vídeos.
 
 ## Controles
 

@@ -37,7 +37,7 @@ async function activate(item, _index, context) {
     await audioManager.fadeOutAndPause();
   }
 
-  const controller = createScene(item, { ...context, muted });
+  const controller = createScene(item, { ...context, muted, videoVolume: settings.video?.volume });
   const incoming = controller.element;
   const outgoing = currentElement;
   sceneHost.append(incoming);

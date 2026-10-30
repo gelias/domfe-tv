@@ -1,7 +1,7 @@
 export class AudioManager {
   constructor(audio, settings = {}) {
     this.audio = audio;
-    this.volume = settings.volume ?? 0.22;
+    this.volume = settings.volume ?? 0.8;
     this.fadeMs = settings.fadeMs ?? 500;
     this.muted = false;
     this.operation = 0;

@@ -114,7 +114,214 @@
   {
     "type": "agenda",
     "duration": 22,
-    "dynamicSource": "content/agenda"
+    "eyebrow": "Programação de outubro de 2026",
+    "title": "1ª semana",
+    "entries": [
+      {
+        "day": 1,
+        "weekday": "Quinta",
+        "time": "15h",
+        "title": "Parábola do mau rico",
+        "speaker": "Ivana Menezes"
+      },
+      {
+        "day": 2,
+        "weekday": "Sexta",
+        "time": "20h15",
+        "title": "Arte e valorização da vida",
+        "speaker": "Marcelo Ferraz"
+      }
+    ],
+    "month": "OUT"
+  },
+  {
+    "type": "agenda",
+    "duration": 24,
+    "eyebrow": "Programação de outubro de 2026",
+    "title": "2ª semana",
+    "entries": [
+      {
+        "day": 5,
+        "weekday": "Segunda",
+        "time": "20h15",
+        "age": "+12 anos",
+        "talks": [
+          {
+            "title": "Em ti próprio",
+            "speaker": "Milton Silveira"
+          },
+          {
+            "title": "Tempo do processo obsessivo",
+            "speaker": "Gilmar Oliveira"
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "weekday": "Terça",
+        "time": "15h",
+        "title": "Bem aventurados os aflitos",
+        "speaker": "Lia Mara Silveira"
+      },
+      {
+        "day": 8,
+        "weekday": "Quinta",
+        "time": "15h",
+        "title": "Nas aflições da vida",
+        "speaker": "Eliane Rodrigues"
+      },
+      {
+        "day": 9,
+        "weekday": "Sexta",
+        "time": "20h15",
+        "title": "Vença o desânimo",
+        "speaker": "Régis Pacheco"
+      }
+    ],
+    "month": "OUT"
+  },
+  {
+    "type": "agenda",
+    "duration": 24,
+    "eyebrow": "Programação de outubro de 2026",
+    "title": "3ª semana",
+    "entries": [
+      {
+        "day": 12,
+        "weekday": "Segunda",
+        "time": "20h15",
+        "age": "+12 anos",
+        "talks": [
+          {
+            "title": "Trabalhos imediatos",
+            "speaker": "Ronaldo Bagesteiro"
+          },
+          {
+            "title": "A questão do mal e a obsessão",
+            "speaker": "Marco Sumienski"
+          }
+        ]
+      },
+      {
+        "day": 13,
+        "weekday": "Terça",
+        "time": "15h",
+        "title": "Alicerce da evolução",
+        "subtitle": "A importância da infância e o papel da família na visão espírita.",
+        "speaker": "Cátia Silene"
+      },
+      {
+        "day": 15,
+        "weekday": "Quinta",
+        "time": "15h",
+        "title": "Deixai vir a mim os pequeninos",
+        "speaker": "Carlos Borba"
+      },
+      {
+        "day": 16,
+        "weekday": "Sexta",
+        "time": "20h15",
+        "title": "Autoestima e autocuidado preventivo",
+        "subtitle": "O amor próprio como caminho da saúde.",
+        "speaker": "Jennifer Santos"
+      }
+    ],
+    "month": "OUT"
+  },
+  {
+    "type": "agenda",
+    "duration": 24,
+    "eyebrow": "Programação de outubro de 2026",
+    "title": "4ª semana",
+    "entries": [
+      {
+        "day": 19,
+        "weekday": "Segunda",
+        "time": "20h15",
+        "age": "+12 anos",
+        "talks": [
+          {
+            "title": "Prosseguindo",
+            "speaker": "Clarice Bittar"
+          },
+          {
+            "title": "Eu, um obsessor",
+            "speaker": "Ademir dos Reis"
+          }
+        ]
+      },
+      {
+        "day": 20,
+        "weekday": "Terça",
+        "time": "15h",
+        "title": "Deixar vir a mim os pequeninos",
+        "speaker": "Leone Zangalli"
+      },
+      {
+        "day": 22,
+        "weekday": "Quinta",
+        "time": "15h",
+        "title": "Perdoai para que Deus vos perdoe",
+        "speaker": "Rejane Avancini"
+      },
+      {
+        "day": 23,
+        "weekday": "Sexta",
+        "time": "20h15",
+        "title": "Doutrina Espírita",
+        "subtitle": "Como ferramenta do autoconhecimento, rumo ao mundo de regeneração.",
+        "speaker": "Adilson Gama"
+      }
+    ],
+    "month": "OUT"
+  },
+  {
+    "type": "agenda",
+    "duration": 24,
+    "eyebrow": "Programação de outubro de 2026",
+    "title": "5ª semana",
+    "entries": [
+      {
+        "day": 26,
+        "weekday": "Segunda",
+        "time": "20h15",
+        "age": "+12 anos",
+        "talks": [
+          {
+            "title": "Comunicações",
+            "speaker": "Cassiane Fleck"
+          },
+          {
+            "title": "Obsidiado e o obsessor",
+            "subtitle": "Enfermos da Alma",
+            "speaker": "Vera da Rosa"
+          }
+        ]
+      },
+      {
+        "day": 27,
+        "weekday": "Terça",
+        "time": "15h",
+        "title": "O maior mandamento",
+        "speaker": "Janice Rosetti"
+      },
+      {
+        "day": 29,
+        "weekday": "Quinta",
+        "time": "15h",
+        "title": "Em ti próprio",
+        "speaker": "Milton Silveira"
+      },
+      {
+        "day": 30,
+        "weekday": "Sexta",
+        "time": "20h15",
+        "title": "Fé",
+        "subtitle": "Mãe da esperança e da caridade",
+        "speaker": "André Andrade"
+      }
+    ],
+    "month": "OUT"
   },
   {
     "type": "notice",

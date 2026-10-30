@@ -29,6 +29,7 @@ test('contrato visual Full HD preserva tamanhos mínimos', async () => {
   assert.match(css, /\.history-aside[^}]*translateY\(-3vh\)/s);
   assert.match(css, /\.history-qr img[^}]*width:\s*108px[^}]*height:\s*108px/s);
   assert.match(css, /\.services-footer-message[^}]*color:\s*var\(--blue-dark\)[^}]*font-weight:\s*900/s);
+  assert.match(css, /\.services-grid-centered \.service[^}]*border:\s*3px solid rgba\(35,86,163,\.58\)[^}]*background:\s*linear-gradient/s);
   assert.match(css, /\.notice-intro[^}]*place-content:\s*center/s);
   assert.match(css, /\.notice-intro-icon[^}]*width:\s*88px[^}]*height:\s*88px/s);
   assert.match(css, /\.social-whatsapp-icon[^}]*width:\s*72px[^}]*height:\s*72px/s);
