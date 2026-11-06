@@ -90,4 +90,8 @@ async function main() {
     }
   }
 }
-main().catch(error => { console.error(error); process.exitCode = 1; });
+main().catch(error => {
+  const message = String(error.stack || error).replaceAll('%', '%25').replaceAll('\r', '%0D').replaceAll('\n', '%0A');
+  console.error(`::error title=Desktop smoke test::${message}`);
+  process.exitCode = 1;
+});

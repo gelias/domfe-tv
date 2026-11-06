@@ -3,6 +3,10 @@ name: Pacotes desktop da Domfe TV
 on:
   workflow_dispatch:
   push:
+    branches: [main]
+    paths:
+      - '.github/workflows/desktop.yml'
+      - 'scripts/smoke-desktop.cjs'
     tags: ['v*']
 
 permissions:
