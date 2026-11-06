@@ -58,9 +58,13 @@ async function main() {
     let result;
     for (let attempt = 0; attempt < 30; attempt++) {
       result = await evaluate(`(async () => {
+        if (location.href !== 'domfe://app/index.html' || document.readyState !== 'complete') {
+          return { ready: false };
+        }
         const playlist = await (await fetch('domfe://app/config/playlist.json')).json();
         const weeks = playlist.filter(item => item.type === 'agenda' && item.entries);
         return {
+          ready: true,
           title: document.title,
           button: !!document.querySelector('#startButton'),
           bridge: typeof window.domfeDesktop?.prepareMedia,
@@ -73,6 +77,7 @@ async function main() {
       if (result.button && result.logo && result.bridge === 'function') break;
       await delay(500);
     }
+    assert.equal(result.ready, true, 'Packaged document did not finish loading');
     assert.equal(result.title, 'Domfe TV');
     assert.equal(result.button, true);
     assert.equal(result.bridge, 'function');

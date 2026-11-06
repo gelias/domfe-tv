@@ -1,6 +1,6 @@
 {
   "name": "domfe-tv",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "Programação institucional offline da Associação Espírita Dom Feliciano",
   "author": "Associação Espírita Dom Feliciano",
   "main": "desktop/main.cjs",

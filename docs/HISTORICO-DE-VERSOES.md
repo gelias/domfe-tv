@@ -236,3 +236,7 @@
 - Teste nativo do aplicativo empacotado aprovado em runner macOS arm64: janela, protocolo local, ponte isolada, logotipo e cinco semanas da programação.
 - Diagnóstico do teste de abertura ampliado para anotações do GitHub Actions; alterações do workflow passam a executar validação também na branch principal.
 - Reprodução local do vídeo validada até o evento de término em velocidade acelerada, com pausa e retomada da música; mídias conferidas pelo SHA-256 do manifesto.
+
+## v2.3.4 — Sincronização do teste nativo (06/11/2026)
+
+- Teste de abertura aguarda o documento local terminar de carregar antes de consultar a programação, evitando uma falha de fetch durante a navegação inicial.
