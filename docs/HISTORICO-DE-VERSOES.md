@@ -224,3 +224,9 @@
 - Programação mensal atualizada conforme `11_Escala_Novembro_2026.pdf`, com 17 datas e 22 palestras distribuídas em cinco semanas.
 - Preservadas as duas palestras de cada segunda-feira, a indicação de público maior de 12 anos e a Palestra Musical Espírita do Coral Semeadores da Luz em 13/11.
 - Cards identificados com NOV; horários mantidos conforme a agenda semanal da casa: terças e quintas às 15h; segundas e sextas às 20h15. O PDF informa durações das palestras, sem horários de início.
+
+## v2.3.2 — Mac Apple Silicon (06/11/2026)
+
+- Pacote ZIP para macOS arm64 (M1 ou posterior), com preparação automática das mídias e programação de novembro.
+- Workflow gera o aplicativo em runner Apple Silicon, verifica a abertura do pacote e publica o ZIP com SHA-256 junto ao executável Windows.
+- Orientações de instalação e primeira abertura documentadas; aplicativo sem assinatura ou notarização Apple.

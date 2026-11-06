@@ -21,7 +21,10 @@ win:
 portable:
   requestExecutionLevel: user
 mac:
-  target: zip
+  artifactName: Domfe-TV-${version}-mac-${arch}.${ext}
+  target:
+    - target: zip
+      arch: [arm64]
   category: public.app-category.education
 linux:
   target: AppImage

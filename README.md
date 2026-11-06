@@ -10,7 +10,7 @@ Não abra `index.html` diretamente.
 
 ### Aplicativo Windows — versão portátil
 
-Baixe `Domfe-TV-2.3.1-windows-x64.exe`, coloque-o em uma pasta própria
+Baixe `Domfe-TV-2.3.2-windows-x64.exe`, coloque-o em uma pasta própria
 (por exemplo, `Documentos/Domfe TV`) e dê dois cliques. Não é necessário
 instalar Python, Node.js ou configurar um navegador.
 
@@ -33,7 +33,21 @@ O executável e seu checksum ficam disponíveis na página de
 [Releases do projeto](https://github.com/gelias/domfe-tv/releases). Baixe o `.exe`
 da versão desejada. Os arquivos **Source code** são destinados a desenvolvimento.
 
-### macOS
+### Aplicativo macOS — Apple Silicon (M1 ou posterior)
+
+Baixe `Domfe-TV-2.3.2-mac-arm64.zip` em [Releases](https://github.com/gelias/domfe-tv/releases),
+extraia o ZIP e mova **Domfe TV.app** para uma pasta própria ou para Aplicativos.
+Abra o aplicativo e mantenha a internet até concluir a preparação das mídias.
+Não requer Python ou Node.js. As próximas aberturas funcionam offline.
+As mídias ficam na pasta `assets` ao lado do aplicativo; se não houver permissão,
+o aplicativo usa a pasta de dados do usuário.
+
+Este pacote não é assinado nem notarizado pela Apple. Se o macOS bloquear a
+abertura, após conferir a origem e o checksum, use **Ajustes do Sistema →
+Privacidade e Segurança → Abrir Mesmo Assim**. Não desative o Gatekeeper.
+O pacote é exclusivo para Apple Silicon; Macs Intel não são suportados por ele.
+
+### macOS — inicializador Python (código-fonte)
 
 Dê dois cliques em `INICIAR-DOMFE-TV-MACOS.command`.
 
@@ -131,9 +145,10 @@ O resultado fica em `dist/`. O áudio e o vídeo não são incluídos no pacote.
 O workflow `.github/workflows/desktop.yml` executa os testes e gera esse pacote
 em um runner Windows quando iniciado manualmente ou ao enviar uma tag `v*`.
 Tags `v*` também publicam o executável e seu checksum no GitHub Releases;
-execuções manuais geram somente artefatos de teste. Builds macOS e Linux estão
-configurados para trabalhos futuros, mas precisam de validação nesses sistemas
-antes de distribuição.
+execuções manuais geram somente artefatos de teste. O workflow também gera um ZIP macOS arm64 e verifica a abertura do aplicativo
+empacotado em um runner Apple Silicon. A reprodução e a primeira abertura com
+Gatekeeper ainda precisam ser conferidas no Mac de destino. Linux permanece
+configurado para trabalhos futuros.
 
 Ao trocar uma mídia, atualize o link de recuperação e o `fileId`, o número de
 bytes e o SHA-256 no manifesto. O compartilhamento no Drive deve permitir
