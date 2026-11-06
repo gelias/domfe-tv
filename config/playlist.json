@@ -113,215 +113,212 @@
   },
   {
     "type": "agenda",
-    "duration": 22,
-    "eyebrow": "Programação de outubro de 2026",
+    "duration": 24,
+    "eyebrow": "Programação de novembro de 2026",
     "title": "1ª semana",
     "entries": [
       {
-        "day": 1,
-        "weekday": "Quinta",
-        "time": "15h",
-        "title": "Parábola do mau rico",
-        "speaker": "Ivana Menezes"
-      },
-      {
         "day": 2,
-        "weekday": "Sexta",
-        "time": "20h15",
-        "title": "Arte e valorização da vida",
-        "speaker": "Marcelo Ferraz"
-      }
-    ],
-    "month": "OUT"
-  },
-  {
-    "type": "agenda",
-    "duration": 24,
-    "eyebrow": "Programação de outubro de 2026",
-    "title": "2ª semana",
-    "entries": [
-      {
-        "day": 5,
         "weekday": "Segunda",
         "time": "20h15",
         "age": "+12 anos",
         "talks": [
           {
-            "title": "Em ti próprio",
+            "title": "Vidas sucessivas",
             "speaker": "Milton Silveira"
           },
           {
-            "title": "Tempo do processo obsessivo",
+            "title": "As compulsões nos processos obsessivos",
             "speaker": "Gilmar Oliveira"
           }
         ]
       },
       {
-        "day": 6,
+        "day": 3,
         "weekday": "Terça",
         "time": "15h",
-        "title": "Bem aventurados os aflitos",
-        "speaker": "Lia Mara Silveira"
+        "title": "Reconciliar-se com os adversários",
+        "speaker": "Iara Motta"
       },
       {
-        "day": 8,
+        "day": 5,
         "weekday": "Quinta",
         "time": "15h",
-        "title": "Nas aflições da vida",
-        "speaker": "Eliane Rodrigues"
+        "title": "Benefícios pagos com a ingratidão",
+        "speaker": "Paulo Figueiredo"
       },
       {
-        "day": 9,
+        "day": 6,
         "weekday": "Sexta",
         "time": "20h15",
-        "title": "Vença o desânimo",
-        "speaker": "Régis Pacheco"
+        "title": "O jugo leve",
+        "speaker": "Carlos Ubirajara"
       }
     ],
-    "month": "OUT"
+    "month": "NOV"
   },
   {
     "type": "agenda",
     "duration": 24,
-    "eyebrow": "Programação de outubro de 2026",
-    "title": "3ª semana",
+    "eyebrow": "Programação de novembro de 2026",
+    "title": "2ª semana",
     "entries": [
       {
-        "day": 12,
+        "day": 9,
         "weekday": "Segunda",
         "time": "20h15",
         "age": "+12 anos",
         "talks": [
           {
-            "title": "Trabalhos imediatos",
+            "title": "Legendas do literato espírita",
             "speaker": "Ronaldo Bagesteiro"
           },
           {
-            "title": "A questão do mal e a obsessão",
-            "speaker": "Marco Sumienski"
-          }
-        ]
-      },
-      {
-        "day": 13,
-        "weekday": "Terça",
-        "time": "15h",
-        "title": "Alicerce da evolução",
-        "subtitle": "A importância da infância e o papel da família na visão espírita.",
-        "speaker": "Cátia Silene"
-      },
-      {
-        "day": 15,
-        "weekday": "Quinta",
-        "time": "15h",
-        "title": "Deixai vir a mim os pequeninos",
-        "speaker": "Carlos Borba"
-      },
-      {
-        "day": 16,
-        "weekday": "Sexta",
-        "time": "20h15",
-        "title": "Autoestima e autocuidado preventivo",
-        "subtitle": "O amor próprio como caminho da saúde.",
-        "speaker": "Jennifer Santos"
-      }
-    ],
-    "month": "OUT"
-  },
-  {
-    "type": "agenda",
-    "duration": 24,
-    "eyebrow": "Programação de outubro de 2026",
-    "title": "4ª semana",
-    "entries": [
-      {
-        "day": 19,
-        "weekday": "Segunda",
-        "time": "20h15",
-        "age": "+12 anos",
-        "talks": [
-          {
-            "title": "Prosseguindo",
-            "speaker": "Clarice Bittar"
-          },
-          {
-            "title": "Eu, um obsessor",
+            "title": "Desafetos do passado, obsessores do presente",
             "speaker": "Ademir dos Reis"
           }
         ]
       },
       {
-        "day": 20,
+        "day": 10,
         "weekday": "Terça",
         "time": "15h",
-        "title": "Deixar vir a mim os pequeninos",
-        "speaker": "Leone Zangalli"
+        "title": "Bem aventurados os mansos e pacíficos",
+        "speaker": "Lia Mara Silveira"
       },
       {
-        "day": 22,
+        "day": 12,
         "weekday": "Quinta",
         "time": "15h",
-        "title": "Perdoai para que Deus vos perdoe",
-        "speaker": "Rejane Avancini"
+        "title": "Endireitar os caminhos",
+        "speaker": "Milton Silveira"
       },
       {
-        "day": 23,
+        "day": 13,
         "weekday": "Sexta",
         "time": "20h15",
-        "title": "Doutrina Espírita",
-        "subtitle": "Como ferramenta do autoconhecimento, rumo ao mundo de regeneração.",
-        "speaker": "Adilson Gama"
+        "title": "Palestra Musical Espírita",
+        "speaker": "Coral Semeadores da Luz"
       }
     ],
-    "month": "OUT"
+    "month": "NOV"
   },
   {
     "type": "agenda",
     "duration": 24,
-    "eyebrow": "Programação de outubro de 2026",
-    "title": "5ª semana",
+    "eyebrow": "Programação de novembro de 2026",
+    "title": "3ª semana",
     "entries": [
       {
-        "day": 26,
+        "day": 16,
         "weekday": "Segunda",
         "time": "20h15",
         "age": "+12 anos",
         "talks": [
           {
-            "title": "Comunicações",
-            "speaker": "Cassiane Fleck"
+            "title": "Certamente",
+            "speaker": "Clarice Bittar"
           },
           {
-            "title": "Obsidiado e o obsessor",
-            "subtitle": "Enfermos da Alma",
+            "title": "Angústia na obsessão",
+            "speaker": "Marco Sumienski"
+          }
+        ]
+      },
+      {
+        "day": 17,
+        "weekday": "Terça",
+        "time": "15h",
+        "title": "A paciência",
+        "speaker": "Ana Maria"
+      },
+      {
+        "day": 19,
+        "weekday": "Quinta",
+        "time": "15h",
+        "title": "A riqueza real",
+        "speaker": "Marco Sumienski"
+      },
+      {
+        "day": 20,
+        "weekday": "Sexta",
+        "time": "20h15",
+        "title": "Parábola do semeador",
+        "speaker": "Gilmar Oliveira"
+      }
+    ],
+    "month": "NOV"
+  },
+  {
+    "type": "agenda",
+    "duration": 24,
+    "eyebrow": "Programação de novembro de 2026",
+    "title": "4ª semana",
+    "entries": [
+      {
+        "day": 23,
+        "weekday": "Segunda",
+        "time": "20h15",
+        "age": "+12 anos",
+        "talks": [
+          {
+            "title": "Melhorar para progredir",
+            "speaker": "Cedenir Mendes"
+          },
+          {
+            "title": "O egoísmo na gênese obsessiva",
             "speaker": "Vera da Rosa"
           }
         ]
       },
       {
-        "day": 27,
+        "day": 24,
         "weekday": "Terça",
         "time": "15h",
-        "title": "O maior mandamento",
-        "speaker": "Janice Rosetti"
+        "title": "O homem de bem",
+        "speaker": "Cátia Silene"
       },
       {
-        "day": 29,
+        "day": 26,
         "weekday": "Quinta",
         "time": "15h",
-        "title": "Em ti próprio",
-        "speaker": "Milton Silveira"
+        "title": "Com amor",
+        "speaker": "Cora Pavin"
       },
       {
-        "day": 30,
+        "day": 27,
         "weekday": "Sexta",
         "time": "20h15",
-        "title": "Fé",
-        "subtitle": "Mãe da esperança e da caridade",
-        "speaker": "André Andrade"
+        "title": "Endireitar os caminhos",
+        "speaker": "Milton Silveira"
       }
     ],
-    "month": "OUT"
+    "month": "NOV"
+  },
+  {
+    "type": "agenda",
+    "duration": 24,
+    "eyebrow": "Programação de novembro de 2026",
+    "title": "5ª semana",
+    "entries": [
+      {
+        "day": 30,
+        "weekday": "Segunda",
+        "time": "20h15",
+        "age": "+12 anos",
+        "talks": [
+          {
+            "title": "Estações necessárias",
+            "speaker": "Cassiane Fleck"
+          },
+          {
+            "title": "Atraindo obsessores",
+            "speaker": "Sônia Neumann"
+          }
+        ]
+      }
+    ],
+    "month": "NOV"
   },
   {
     "type": "notice",

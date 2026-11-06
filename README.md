@@ -10,7 +10,7 @@ Não abra `index.html` diretamente.
 
 ### Aplicativo Windows — versão portátil
 
-Baixe `Domfe-TV-2.3.0-windows-x64.exe`, coloque-o em uma pasta própria
+Baixe `Domfe-TV-2.3.1-windows-x64.exe`, coloque-o em uma pasta própria
 (por exemplo, `Documentos/Domfe TV`) e dê dois cliques. Não é necessário
 instalar Python, Node.js ou configurar um navegador.
 

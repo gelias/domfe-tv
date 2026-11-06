@@ -1,14 +1,17 @@
-## Domfe TV 2.3.0 — Windows portátil
+## Domfe TV 2.3.1 — Windows portátil
 
 ### Como usar
 
-1. Baixe **Domfe-TV-2.3.0-windows-x64.exe** nos arquivos desta Release.
+1. Baixe **Domfe-TV-2.3.1-windows-x64.exe** nos arquivos desta Release.
 2. Coloque o executável em uma pasta própria, como `Documentos/Domfe TV`.
 3. Dê dois cliques. Não é necessário instalar Python ou Node.js.
 4. Na primeira abertura, mantenha a conexão com a internet enquanto o aplicativo prepara a música e o vídeo (aproximadamente 266 MB).
 5. Clique em **Iniciar programação**. As próximas execuções funcionam offline.
 
 ### Novidades
+
+- Programação de novembro de 2026 atualizada conforme a escala oficial: 17 datas e 22 palestras em cinco semanas.
+- Inclui a Palestra Musical Espírita do Coral Semeadores da Luz em 13/11 e as duas palestras de cada segunda-feira.
 
 - Aplicativo com janela própria e identidade visual da Domfe.
 - Download automático de mídias ausentes ou inválidas, com progresso e opção de tentar novamente.

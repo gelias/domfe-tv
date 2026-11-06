@@ -218,3 +218,9 @@
 - Fonte dos subtítulos reduzida de 38px para 34px a pedido do usuário, reforçando a diferença visual em relação ao tema principal.
 - Revisão das cinco semanas: títulos extensos de 23, 26 e 30 de outubro também divididos em tema e subtítulo de 34px, incluindo a segunda palestra de segunda-feira, preservando o conteúdo e a hierarquia visual adotada nos dias 13 e 16.
 - Agenda mensal passa a ajustar proporcionalmente o conjunto de título e cards à largura e à altura reais da janela, inclusive após mudança de zoom ou entrada em tela cheia. Composição em duas colunas preservada, com margens seguras e limpeza do observador ao sair da cena.
+
+## v2.3.1 — Novembro de 2026 (06/11/2026)
+
+- Programação mensal atualizada conforme `11_Escala_Novembro_2026.pdf`, com 17 datas e 22 palestras distribuídas em cinco semanas.
+- Preservadas as duas palestras de cada segunda-feira, a indicação de público maior de 12 anos e a Palestra Musical Espírita do Coral Semeadores da Luz em 13/11.
+- Cards identificados com NOV; horários mantidos conforme a agenda semanal da casa: terças e quintas às 15h; segundas e sextas às 20h15. O PDF informa durações das palestras, sem horários de início.
