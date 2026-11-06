@@ -1,8 +1,8 @@
-## Domfe TV 2.3.2 — Windows e Mac Apple Silicon
+## Domfe TV 2.3.3 — Windows e Mac Apple Silicon
 
 ### Como usar
 
-1. Baixe **Domfe-TV-2.3.2-windows-x64.exe** nos arquivos desta Release.
+1. Baixe **Domfe-TV-2.3.3-windows-x64.exe** nos arquivos desta Release.
 2. Coloque o executável em uma pasta própria, como `Documentos/Domfe TV`.
 3. Dê dois cliques. Não é necessário instalar Python ou Node.js.
 4. Na primeira abertura, mantenha a conexão com a internet enquanto o aplicativo prepara a música e o vídeo (aproximadamente 266 MB).
@@ -10,7 +10,7 @@
 
 ### macOS — Apple Silicon
 
-1. Baixe **Domfe-TV-2.3.2-mac-arm64.zip** (M1 ou posterior; não serve para Intel).
+1. Baixe **Domfe-TV-2.3.3-mac-arm64.zip** (M1 ou posterior; não serve para Intel).
 2. Extraia e mova **Domfe TV.app** para uma pasta própria ou Aplicativos.
 3. Abra e aguarde a preparação das mídias; não requer Python ou Node.js.
 4. Se o macOS bloquear, confira a origem e o checksum e use **Ajustes do Sistema → Privacidade e Segurança → Abrir Mesmo Assim**. O aplicativo não é assinado nem notarizado pela Apple. Não desative o Gatekeeper.

@@ -10,7 +10,7 @@ Não abra `index.html` diretamente.
 
 ### Aplicativo Windows — versão portátil
 
-Baixe `Domfe-TV-2.3.2-windows-x64.exe`, coloque-o em uma pasta própria
+Baixe `Domfe-TV-2.3.3-windows-x64.exe`, coloque-o em uma pasta própria
 (por exemplo, `Documentos/Domfe TV`) e dê dois cliques. Não é necessário
 instalar Python, Node.js ou configurar um navegador.
 
@@ -35,7 +35,7 @@ da versão desejada. Os arquivos **Source code** são destinados a desenvolvimen
 
 ### Aplicativo macOS — Apple Silicon (M1 ou posterior)
 
-Baixe `Domfe-TV-2.3.2-mac-arm64.zip` em [Releases](https://github.com/gelias/domfe-tv/releases),
+Baixe `Domfe-TV-2.3.3-mac-arm64.zip` em [Releases](https://github.com/gelias/domfe-tv/releases),
 extraia o ZIP e mova **Domfe TV.app** para uma pasta própria ou para Aplicativos.
 Abra o aplicativo e mantenha a internet até concluir a preparação das mídias.
 Não requer Python ou Node.js. As próximas aberturas funcionam offline.

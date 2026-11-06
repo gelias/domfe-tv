@@ -230,3 +230,9 @@
 - Pacote ZIP para macOS arm64 (M1 ou posterior), com preparação automática das mídias e programação de novembro.
 - Workflow gera o aplicativo em runner Apple Silicon, verifica a abertura do pacote e publica o ZIP com SHA-256 junto ao executável Windows.
 - Orientações de instalação e primeira abertura documentadas; aplicativo sem assinatura ou notarização Apple.
+
+## v2.3.3 — Publicação Mac Apple Silicon (06/11/2026)
+
+- Teste nativo do aplicativo empacotado aprovado em runner macOS arm64: janela, protocolo local, ponte isolada, logotipo e cinco semanas da programação.
+- Diagnóstico do teste de abertura ampliado para anotações do GitHub Actions; alterações do workflow passam a executar validação também na branch principal.
+- Reprodução local do vídeo validada até o evento de término em velocidade acelerada, com pausa e retomada da música; mídias conferidas pelo SHA-256 do manifesto.
